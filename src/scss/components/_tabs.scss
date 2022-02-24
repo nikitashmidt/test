@@ -1,0 +1,50 @@
+.tabs {
+  &__header {
+    &-container {
+      height: 182px;
+      background-color: #e6e7ff;
+      @include flex-all-center;
+    }
+  }
+  &__title {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 127%;
+    color: #283c63;
+    margin: 0;
+  }
+  &__container {
+    display: flex;
+    background-color: #f3f8ff;
+    padding-top: 48px;
+    padding-bottom: 88px;
+    padding-left: 31px;
+    gap: 30px;
+  }
+  &__aside {
+    width: 300px;
+    height: 850px;
+    background-color: var(--color-light);
+    display: block;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.17);
+    flex-shrink: 0;
+    border-radius: 10px;
+    @include tablet{
+      display: none;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 19px;
+    @include big-desktop{
+      column-gap: 15px;
+    }
+    @include tablet{
+      justify-content: center;
+    }
+  }
+}

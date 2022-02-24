@@ -1,0 +1,10 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --content-width: 1320px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --color-light: #fff;
+  --color-main: #a993ff;
+  --color-primary: #ff403c;
+}

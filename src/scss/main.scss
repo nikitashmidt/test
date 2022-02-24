@@ -1,0 +1,10 @@
+@import "vars";
+@import "mixins";
+@import "settings";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@500&display=swap');
+
+@import './components/header';
+@import './components/page';
+@import './components/slider';
+@import './components/footer';
+@import './components/tabs';

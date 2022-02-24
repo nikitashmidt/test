@@ -1,0 +1,96 @@
+.footer{
+  min-height: 270px;
+  &__container{
+    display: flex;
+    background-color: var(--color-light);
+    padding-top: 40px;
+    padding-left: 30px;
+    @include desktop{
+      justify-content: space-between;
+    }
+    @include midd-tablet{
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+  }
+  &__items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    &-first{
+      margin-right: 138px;
+    }
+    &-second{
+      margin-right: 194px;
+    }
+    &-third{
+      margin-right: 192px;
+    }
+    &-second,&-third,&-fourth{
+      padding-top: 7px;
+    }
+    &-first,&-second,&-third,&-fourth{
+      @include desktop{
+        margin-right: 50px;
+      }
+      @include midd-tablet{
+        margin-right: 0;
+      }
+    }
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    line-height: 28px;
+    &-link{
+      color: #000000;
+      position: relative;
+      transition: 0.3s all;
+      @include afterHover;
+      &:after{
+        bottom: 5px;
+      }
+    }
+  }
+  &__logo{
+    margin-bottom: 34px;
+    @include midd-tablet{
+      margin-bottom: 10px;
+    }
+  }
+  &__phone{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--color-main);
+    margin-bottom: 13px;
+    position: relative;
+    transition: 0.3s all;
+    @include afterHover;
+    &:after{
+      bottom: -9px;
+    }
+    @include midd-tablet{
+      margin-bottom: 10px;
+    }
+  }
+  &__email{
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    color: #828282;
+    position: relative;
+    transition: 0.3s all;
+    @include afterHover;
+    &:after{
+      bottom: -9px;
+    }
+  }
+}
